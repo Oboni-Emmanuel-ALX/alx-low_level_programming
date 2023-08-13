@@ -12,11 +12,12 @@ int main(void)
 	for (s_num = 0; s_num < 10; s_num++)
 	{
 		putchar(s_num + '0');
-		if (s_num <= 9)
+		if (s_num != 9)
 		{
-			putchar((s_num == 9) ? '$' : ',');
-			putchar((s_num == 9) ? '\n' : ' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
+	putchar('\n');
 	return (0);
 }
