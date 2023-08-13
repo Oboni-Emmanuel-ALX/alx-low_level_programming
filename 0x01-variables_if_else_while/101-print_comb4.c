@@ -20,7 +20,7 @@ int main(void)
 				putchar(d1 + '0');
 				putchar(d2 + '0');
 				putchar(d3 + '0');
-				if (d1 < 8)
+				if (d1 < 7)
 				{
 					putchar(',');
 					putchar(' ');
