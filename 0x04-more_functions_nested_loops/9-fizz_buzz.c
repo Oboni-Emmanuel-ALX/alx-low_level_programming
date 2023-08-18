@@ -1,20 +1,12 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
  * main - Entry point for main function
- * _fizz_buzz -  Entry point for function
+ *
  * Return: Always 0 (Success)
  */
 
 int main(void)
-{
-	_fizz_buzz();
-	return (0);
-}
-
-/* Fizz-Buzz test function */
-void _fizz_buzz(void)
 {
 	int fb;
 
@@ -38,4 +30,5 @@ void _fizz_buzz(void)
 			}
 		}
 		printf("\n");
+		return (0);
 }
