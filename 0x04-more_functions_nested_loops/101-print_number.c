@@ -6,27 +6,22 @@
  */
 void print_number(int n)
 {
-	int rev = 0;
+	int div = 1;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-	if (n == 0)
-	{
-		_putchar('0');
-			return;
-	}
 
-	while (n > 0)
+	while (n / div >= 10)
 	{
-		rev = rev * 10 + n % 10;
-		n /= 10;
+		div *= 10;
 	}
-	while (rev > 0)
+	while (div > 0)
 	{
-		_putchar(rev % 10 + '0');
-			rev /= 10;
+		_putchar('0' + n / div);
+		n %= div;
+		div /= 10;
 	}
 }
