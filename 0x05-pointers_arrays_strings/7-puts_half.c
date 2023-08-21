@@ -24,7 +24,19 @@ void puts_half(char *str)
 	}
 	for (i = sIndex; str[i] != '\0'; i++)
 	{
+		if (str[i] == '\n')
+		{
 		_putchar(str[i]);
+		while (str[i + 1] == '\n')
+		{
+			i++;
+
+		}
+		}
+		else
+		{
+			_putchar(str[i]);
+		}
 	}
 	_putchar('\n');
 }
