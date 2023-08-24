@@ -1,11 +1,16 @@
 #include <stdio.h>
 
+/**
+ * main - change value n = 98
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	int n;
 	int a[5];
 	int *p;
-	
+
 	a[2] = 1024;
 	p = &n;
 	/*
