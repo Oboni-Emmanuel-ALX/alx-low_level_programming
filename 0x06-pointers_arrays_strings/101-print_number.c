@@ -7,20 +7,21 @@
 void print_number(int n)
 {
 	int d = 1;
+	int tv = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-	while (n / d >= 10)
+	while (tv > 9)
 	{
+		tv /= 10;
 		d *= 10;
 	}
 	while (d > 0)
 	{
-		int dg = n / d;
-		_putchar('0' + dg);
+		_putchar((n / d) + '0');
 		n %= d;
 		d /= 10;
 	}
