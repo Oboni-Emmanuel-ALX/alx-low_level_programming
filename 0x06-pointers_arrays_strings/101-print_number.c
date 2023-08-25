@@ -6,14 +6,22 @@
  */
 void print_number(int n)
 {
+	int d = 1;
+
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-	if (n / 10 != 0)
+	while (n / d >= 10)
 	{
-		print_number(n / 10);
+		d *= 10;
 	}
-	_putchar(n % 10 + '0');
+	while (d > 0)
+	{
+		int dg = n / d;
+		_putchar('0' + dg);
+		n %= d;
+		d /= 10;
+	}
 }
