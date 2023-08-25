@@ -4,6 +4,7 @@
  * _strcat - Entry point for function that concatenates two strings
  * @dest: first pointer variable
  * @src: Second pointer variable
+ * Return: initial Dest
  */
 char *_strcat(char *dest, char *src)
 {
